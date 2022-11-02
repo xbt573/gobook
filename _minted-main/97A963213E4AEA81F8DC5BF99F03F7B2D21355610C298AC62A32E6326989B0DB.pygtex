@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k+kn}{package}\PYG{+w}{ }\PYG{n+nx}{main}
-
-\PYG{k+kn}{import}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}gotour/hello\PYGZdq{}}
-
-\PYG{k+kd}{func}\PYG{+w}{ }\PYG{n+nx}{main}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{    }\PYG{n+nx}{hello}\PYG{p}{.}\PYG{n+nx}{Hello}\PYG{p}{()}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}

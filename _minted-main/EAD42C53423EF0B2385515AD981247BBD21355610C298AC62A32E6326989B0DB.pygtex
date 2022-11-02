@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{if}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{    }\PYG{n+nx}{fmt}\PYG{p}{.}\PYG{n+nx}{Println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Невозможно :O\PYGZdq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// никогда не выполнится}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}
