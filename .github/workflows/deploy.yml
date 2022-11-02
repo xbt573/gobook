@@ -1,0 +1,41 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: "main.tex"
+          args: "-pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape"
+
+      - name: Drop artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "drop"
+          path: "main.pdf"
+
+      - name: Clone repository and add pdf
+        continue-on-error: true
+        run: |
+          git clone https://${{ secrets.TOKEN }}@github.com/xbt573/xbt573.github.io ~/xbt573.github.io
+          cp main.pdf ~/xbt573.github.io/gobook.pdf
+
+      - name: Commit changes
+        continue-on-error: true
+        run: |
+          cd ~/xbt573.github.io
+          git config --global user.name "xbt573"
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git add .
+          git commit -m "xbt573/gobook deploy"
+          git push origin master
