@@ -1,0 +1,39 @@
+\subsection{Условия}
+В Go есть три вида условий:
+\begin{itemize}
+    \item If
+    \item Switch
+    \item Select (о нём в отдельной главе)
+\end{itemize}
+
+\verb|if| в Go практически ничем не отличается от других языков программирования:
+\begin{minted}[samepage]{go}
+if 2 * 2 == 5 {
+    fmt.Println("Невозможно :O") // никогда не выполнится
+}
+\end{minted}
+\noindent Вокруг \verb|if| тоже не ставятся скобки, как и в \verb|for|.
+\noindent Также в \verb|if| можно использовать короткие выражения перед проверкой условия, как в инициализационной части \verb|for|:
+\begin{minted}[samepage]{go}
+if x := 2 * 2; x == 5 {
+    fmt.Println("Невозможно :O") // никогда не выполнится
+} else if x := 2 + 2; x == 5 {
+    fmt.Println("Невозможно :O") // тоже никогда не выполнится
+} else {
+    fmt.Println("2 * 2 = 5")
+    fmt.Println("2 + 2 = 5")
+}
+\end{minted}
+\noindent Если вы используете это короткое выражение то \verb|;| обязателен для их разделения.
+
+\verb|switch| тоже практически ничем не отличается, за исключением коротких выражений:
+\begin{minted}[samepage]{go}
+switch x := 2 * 2; x {
+case 5:
+    fmt.Println("Невозможно :O") // никогда не выполнится
+
+case 2:
+    fmt.Println("2 * 2 = 5")
+}
+\end{minted}
+\noindent Важно, что в конце кейса не нужно указывать break.

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{f}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{err}\PYG{+w}{ }\PYG{o}{:=}\PYG{+w}{ }\PYG{n+nx}{os}\PYG{p}{.}\PYG{n+nx}{Create}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}somefile\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{if}\PYG{+w}{ }\PYG{n+nx}{err}\PYG{+w}{ }\PYG{o}{!=}\PYG{+w}{ }\PYG{k+kc}{nil}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{c+c1}{// обработать ошибку (далее в Обработка ошибок)}
+\PYG{p}{\PYGZcb{}}
+\PYG{k}{defer}\PYG{+w}{ }\PYG{n+nx}{f}\PYG{p}{.}\PYG{n+nx}{Close}\PYG{p}{()}
+\end{Verbatim}

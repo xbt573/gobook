@@ -1,0 +1,19 @@
+\subsection{Defer}
+Defer - механизм отложки выполнения кода, что бы отложить функцию вам нужно поставить \verb|defer| перед исполнением функции. Вот пример открытия файла:
+\begin{minted}[samepage]{go}
+f, err := os.Create("somefile")
+if err != nil {
+    // обработать ошибку (далее в Обработка ошибок)
+}
+defer f.Close()
+\end{minted}
+
+\noindent Отложенные функции выполняются в порядке LIFO после возврата из функции или panic (далее в Обработка ошибок)
+\begin{minted}[samepage]{go}
+defer fmt.Println("1")
+defer fmt.Println("2")
+defer fmt.Println("3")
+// 3
+// 2
+// 1
+\end{minted}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{func}\PYG{+w}{ }\PYG{n+nx}{Split}\PYG{p}{(}\PYG{n+nx}{sum}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{x}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{x}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nx}{sum}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{9}
+\PYG{+w}{    }\PYG{n+nx}{y}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nx}{sum}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nx}{x}
+\PYG{+w}{    }\PYG{k}{return}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

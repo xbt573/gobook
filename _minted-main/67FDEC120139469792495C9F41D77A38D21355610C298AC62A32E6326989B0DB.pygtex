@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package}\PYG{+w}{ }\PYG{n+nx}{hello}
+
+\PYG{c+c1}{// Публичное имя, видно другим пакетам}
+\PYG{k+kd}{func}\PYG{+w}{ }\PYG{n+nx}{Hello}\PYG{p}{()\PYGZob{}\PYGZcb{}}
+
+\PYG{c+c1}{// Внутреннее имя, видно только внутри этого пакета}
+\PYG{k+kd}{func}\PYG{+w}{ }\PYG{n+nx}{hello}\PYG{p}{()\PYGZob{}\PYGZcb{}}
+\end{Verbatim}
