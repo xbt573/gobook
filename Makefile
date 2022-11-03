@@ -1,4 +1,4 @@
-all: main.tex sections/*.tex
+all: main.tex
 	pdflatex -shell-escape -halt-on-error main.tex
 
 clean:
